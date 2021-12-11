@@ -1,0 +1,26 @@
+fin = open("1.txt")
+fout = open("output.txt", "w")
+A = []
+while True:
+  s = fin.readline()
+  if not s: break
+  A.append ( int(s) )
+print(A)
+
+fin = open("2.txt")
+D = []
+while True:
+  s = fin.readline()
+  if not s: break
+  D.append ( int(s) )
+print(D)
+
+ff = A + D
+oa = print(sorted(ff))
+
+fout.write(str(sorted(ff)))
+
+fin.close()
+fin.close() 
+fout.close()
+print("Done!")
